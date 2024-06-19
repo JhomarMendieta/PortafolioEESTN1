@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+:root{
+    --fondoCalculadora: #4b2a5e4b;
+    --botonesNum: #9051a196;
+    --botonesOp: #f0b74df8;
+    --font1: "Rubik Doodle Shadow", system-ui;
+    --font2: "Honk", system-ui;
+} 
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+} 
+#header{ 
+    width: 100%;  
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

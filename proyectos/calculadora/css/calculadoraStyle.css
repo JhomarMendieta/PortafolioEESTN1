@@ -1,0 +1,97 @@
+.contenedor_calculadora{
+    background-color: var(--fondoCalculadora);
+    width: 650px;
+    height: 450px;
+    box-shadow: inset -5px -5px 10px rgba(24, 24, 24, 0.432) ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.calculadora{
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.display{
+    background-color: rgb(172, 206, 203);
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-align: end;
+    padding: 0 20px;
+    font-size: 40px;
+    color: #000;
+}
+.botones{
+    /* background-color: rgba(240, 248, 255, 0.281); */
+    width: 100%;
+    height: calc(100% - (80px + 15px)); 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.botones input, input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.botones input{
+    cursor: pointer;
+}   
+
+.botones .num{
+    background-color: var(--botonesNum);
+    box-shadow: inset -5px -5px 10px rgb(88, 0, 129);
+    transition: all ease .3s;  
+    color: #d5dee9;
+}     
+.botones .num:hover{ 
+    opacity: .7; 
+}
+.botones .op{
+    background-color: var(--botonesOp);
+    box-shadow: inset -5px -5px 5px rgba(238, 154, 58, 0.849) ;
+}
+.botones .op:hover{
+    opacity: .7;
+}
+.botones .igual{
+    background-color: rgb(221, 43, 19);
+    box-shadow: inset -5px -5px 5px rgb(165, 33, 0) ;
+}
+.botones .igual:hover{
+    opacity: .7;
+}
+
+
+.planeta{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.planeta p{
+    font-family: var(--font2);
+    font-size: 2.5rem;
+}
+.planeta .img{
+    height: 80px;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.planeta .img img{
+    width: 60px;
+    filter: drop-shadow(5px 5px 0px #000);
+}
