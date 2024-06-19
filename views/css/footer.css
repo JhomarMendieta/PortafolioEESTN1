@@ -1,0 +1,8 @@
+footer{
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-items: center;   
+    color: #fff; 
+}
