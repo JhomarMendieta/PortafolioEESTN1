@@ -1,9 +1,9 @@
 .header {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 80px;
     padding: 0 20px;
-    box-shadow: 0px 0px 100px #000000;
+    box-shadow: 0px 0px 20px #000000;
 }
 
 .header .contenedor__nav {
