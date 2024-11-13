@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font: "Playwrite NG Modern", cursive;
+    font-family: var(--font);
+}
+
+body {
+    text-align: center;
+    color: #fff;
+}
+
+.contenedor_reproductor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: -1;
+    animation: hola 5s infinite;
+}
+
+#startButton, #pauseButton {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 6px 6px 0px #c0c0c0;
+    transform: translate(-3px, -3px);
+    transition: all .3s ease;
+    font-weight: bold;
+}
+
+#startButton:active, #pauseButton:active {
+    box-shadow: 0px 1px 5px #ffffff;
+    transform: translate(0px, 0px);
+}
+
+#musicBox {
+    background-color: #c0c0c0;
+    width: 400px;
+    height: 160px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.music-bar {
+    background-color: #858585;
+    width: 20px;
+}
+
+@keyframes hola {
+    0% {
+        background-color: #101c2e;
+    }
+    25% {
+        background-color: #1a283d;
+    }
+    50% {
+        background-color: #0f2038;
+    }
+    75% {
+        background-color: #1a2e4b;        
+    }
+    100% {
+        background-color: #101c2e;
+    }
+}

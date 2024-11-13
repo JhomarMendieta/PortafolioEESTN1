@@ -8,7 +8,7 @@
     display: none;
 }
 body{
-    background-image: url(../Img/fondo.png);
+    background-image: url(../Img/fondo.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
